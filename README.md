@@ -16,14 +16,15 @@ To gain hands-on expertise in designing scalable, resilient data workflows on AW
 ## Learning Roadmap
 This six-month roadmap is structured into focused phases that reflect real-world data engineering workflows.
 
-| Phase                                      | Duration | Focus                                                       |
-| ------------------------------------------ | -------- | ----------------------------------------------------------- |
-| **Phase 1: Foundations**                   | 2 weeks  | IAM, S3, CLI, Boto3 basics                                  |
-| **Phase 2: Ingestion**                     | 3 weeks  | Kinesis streams, Glue Crawlers, Lambda, DMS                 |
-| **Phase 3: ETL & Storage**                 | 4 weeks  | Glue (PySpark), Delta formats, schema evolution             |
-| **Phase 4: Querying & Reporting**          | 2 weeks  | Athena for ad-hoc queries, QuickSight for dashboards        |
-| **Phase 5: Orchestration & Monitoring**    | 4 weeks  | Step Functions, MWAA (Airflow), observability with logs     |
-| **Phase 6: CI/CD & Infrastructure**        | 4 weeks  | Terraform IaC, CodePipeline, multi-env deployments          |
-| **Phase 7: Capstone & Resume Integration** | 2 weeks  | End-to-end project and publishing to repo                   |
+| Phase                                      | Duration | Focus                                                                 |
+|-------------------------------------------|----------|------------------------------------------------------------------------|
+| **Phase 1: Foundations**                   | 2 weeks  | IAM, S3, AWS CLI, Boto3, Console usage, resource tagging              |
+| **Phase 2: Ingestion**                     | 3 weeks  | Kinesis (Streams & Firehose), Glue Crawlers, Lambda, DMS, API Gateway |
+| **Phase 3: ETL & Storage**                 | 4 weeks  | Glue (PySpark), S3 partitioning, Delta formats, schema evolution      |
+| **Phase 4: Querying & Reporting**          | 2 weeks  | Athena (CTAS, views), Glue Catalog, QuickSight, fine-grained access   |
+| **Phase 5: Orchestration & Monitoring**    | 4 weeks  | Step Functions, MWAA (Airflow), CloudWatch, CloudTrail                |
+| **Phase 6: CI/CD & Infrastructure**        | 4 weeks  | Terraform (HCL), CodePipeline, CodeBuild, multi-env deployments       |
+| **Phase 7: Capstone Project**              | 2 weeks  | End-to-end pipeline build and publishing to GitHub                    |
+
 
 This repository is actively updated. All projects are designed with code-first principles, version control, and reproducibility.
