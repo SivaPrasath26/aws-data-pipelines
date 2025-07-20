@@ -1,0 +1,37 @@
+You can create a free AWS account and receive $100 credits upfront, with an additional $100 available via AWS Activate or educational programs. The Free Tier covers almost all services in this roadmap, including IAM, S3, Lambda, Glue, Athena, and more.
+
+> **Note**: All AWS services required for this entire roadmap are covered under the Free Tier or included in the $100 credits.
+
+---
+
+| Phase        | Tool / Concept                 | Task                                                                                  | Notes                                                                                   |
+|--------------|-------------------------------|----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| **Phase 1**  | AWS IAM                       | Create users, roles, policies                                                         | Understand least privilege and use MFA                                                  |
+|              | AWS S3                        | Create versioned bucket, upload objects, enable lifecycle policy                      | Explore S3 storage classes                                                              |
+|              | AWS CLI                       | Install CLI, configure profile, run basic commands (`aws s3 ls`, etc.)                | Track credentials and regions                                                           |
+|              | Boto3                         | Write simple Python scripts to list buckets, upload files                             | Practice with boto3 sessions and clients                                                |
+|              | Console Usage                 | Explore AWS Console UI, CloudShell, navigation                                         | Use tagging best practices                                                              |
+| **Phase 2**  | AWS Kinesis                   | Set up Kinesis Data Streams & Firehose                                                | Ingest mock streaming data using CLI or scripts                                         |
+|              | AWS Glue Crawlers             | Point crawler to S3, infer schema into Glue Data Catalog                              | Understand partitioned datasets                                                         |
+|              | AWS Lambda                    | Trigger Lambda on S3/Kinesis events                                                   | Write Python handler, test locally                                                      |
+|              | AWS DMS                       | Configure source & target endpoints, set up migration                                 | Use public MySQL RDS for demo                                                           |
+|              | API Gateway                   | Create REST API, integrate with Lambda                                                | Test endpoints using Postman or curl                                                    |
+| **Phase 3**  | AWS Glue (PySpark)            | Author ETL script to clean/transform data, save to S3                                 | Use Glue Studio and test on dev endpoints                                               |
+|              | S3 Partitioning               | Write data with partition keys and validate folder structure                          | Query partitioned data with Athena                                                      |
+|              | Delta Lake Formats            | Use Delta Lake (via Glue or local Spark) to write ACID-compliant tables               | Understand schema evolution                                                             |
+|              | Schema Evolution              | Modify schema in source and handle downstream impact                                  | Use Glue DynamicFrames                                                                 |
+| **Phase 4**  | AWS Athena                    | Run CTAS queries, create views, and test performance                                  | Store outputs in a designated query result bucket                                       |
+|              | Glue Catalog                  | Register tables, check compatibility with Athena and QuickSight                       | Add partition metadata                                                                  |
+|              | QuickSight                    | Build dashboard on top of Athena/Glue data                                            | Configure SPICE, fine-grained access control                                            |
+| **Phase 5**  | AWS Step Functions            | Design and execute a state machine with Lambda steps                                  | Include failure paths and retries                                                       |
+|              | Amazon MWAA (Airflow)         | Deploy DAGs to MWAA via S3                                                            | Automate Glue jobs, Lambda tasks                                                        |
+|              | CloudWatch Logs & Metrics     | Create alarms, monitor logs for Lambda, Step Functions                                | Set up metric filters                                                                   |
+|              | CloudTrail                    | Enable logging, analyze API activity                                                  | Track changes and detect anomalies                                                      |
+| **Phase 6**  | Terraform                     | Write modules to provision S3, IAM, Glue, Lambda                                      | Use remote state with S3 backend                                                        |
+|              | CodePipeline + CodeBuild      | Deploy Lambda/Glue code via CI/CD                                                     | Trigger on GitHub commit                                                                |
+|              | Multi-env Deployment          | Parameterize dev/stage/prod configs using Terraform workspaces                        | Validate isolation across environments                                                  |
+| **Phase 7**  | Capstone Project              | Build a complete data pipeline                                                        | Ingest → Clean → Transform → Store → Query → Visualize                                 |
+|              | Architecture Diagram          | Document each service used and link their interactions                                | Use draw.io or Lucidchart                                                               |
+|              | Cost Estimation               | Use AWS Pricing Calculator for services used                                          | Compare with Free Tier usage                                                            |
+|              | GitHub README                 | Write a detailed explanation of your pipeline                                         | Include goals, design decisions, and trade-offs                                         |
+|              | Resume/Portfolio Integration  | Add your project with link, description, and architecture snapshot                    | Focus on engineering depth and decisions                                                |
