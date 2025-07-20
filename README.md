@@ -25,6 +25,5 @@ This six-month roadmap is structured into focused phases that reflect real-world
 | **Phase 5: Orchestration & Monitoring**    | 4 weeks  | Step Functions, MWAA (Airflow), observability with logs     |
 | **Phase 6: CI/CD & Infrastructure**        | 4 weeks  | Terraform IaC, CodePipeline, multi-env deployments          |
 | **Phase 7: Capstone & Resume Integration** | 2 weeks  | End-to-end project and publishing to repo                   |
-|------------------------------------------- | -------- | ----------------------------------------------------------- |
 
-This repository is actively updated. All projects are designed with code-first principles, version control, and reproducibility in mind—aligned.
+This repository is actively updated. All projects are designed with code-first principles, version control, and reproducibility.
