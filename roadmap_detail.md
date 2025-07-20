@@ -74,7 +74,7 @@
 
 ---
 
-## Phase 7: Capstone & Resume Integration (2 weeks)
+## Phase 7: Capstone Project (2 weeks)
 **Goal**: Build a full pipeline project and prepare it for portfolio/resume use.
 
 | Tool / Practice       | Description |
