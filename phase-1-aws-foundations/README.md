@@ -18,7 +18,7 @@ This phase lays the groundwork for building data engineering pipelines using AWS
 
 | Tool       | Description                                                                 |
 |------------|-----------------------------------------------------------------------------|
-| IAM        | Manage users, groups, roles, and permissions securely.                      |
+| [IAM](phase-1-aws-foundations/notes/iam.md)        | Manage users, groups, roles, and permissions securely.                      |
 | S3         | Scalable object storage for raw, intermediate, and processed data.         |
 | AWS Console | Web-based UI for interacting with all AWS services.                        |
 | AWS CLI    | Command-line interface for scripting and automation.                        |
