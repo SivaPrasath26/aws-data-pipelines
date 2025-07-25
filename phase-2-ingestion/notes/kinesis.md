@@ -1,4 +1,4 @@
-## AWS Kinesis Data Streams
+## Amazon Kinesis (Data Streams & Firehose)
 
 ### What is Kinesis Data Streams?
 
@@ -27,47 +27,6 @@ Kinesis Data Streams (KDS) is a real-time, highly scalable, and durable data str
 
 ---
 
-### Architecture
-
-```
-Data Producers (apps, IoT, logs)
-        |
-   PutRecord / PutRecords API
-        |
-     Kinesis Stream
-   (sharded stream pipeline)
-        |
-    Consumers (Lambda, KCL app, Firehose)
-        |
-    S3 / Redshift / Elasticsearch / EMR
-```
-
----
-
-### Writing to a Stream (Producer)
-
-* Use AWS SDK (e.g., Boto3 for Python):
-
-```python
-import boto3
-client = boto3.client('kinesis')
-client.put_record(
-    StreamName='mystream',
-    Data=b'mydata',
-    PartitionKey='mypartition'
-)
-```
-
----
-
-### Reading from a Stream (Consumer)
-
-* **Lambda** (easiest): Event-driven consumption
-* **KCL (Kinesis Client Library)**: Java-based lib for advanced control
-* **Enhanced fan-out**: Parallel consumer reads with dedicated throughput
-
----
-
 ### Limits and Throughput
 
 | Resource         | Limit (default)          |
@@ -79,19 +38,11 @@ client.put_record(
 
 ---
 
-### Monitoring Tools
+### Common Use Cases:
 
-* **CloudWatch Metrics**: IncomingBytes, GetRecords.IteratorAgeMilliseconds, ReadProvisionedThroughputExceeded, WriteProvisionedThroughputExceeded
-* **CloudTrail**: API audit
-* **CloudWatch Alarms**: Alert when throttling or lag happens
-
----
-
-### Security
-
-* **IAM Policies** for access control
-* **Encryption at rest** with AWS KMS
-* **HTTPS endpoints** for data-in-transit
+* Real-time dashboards
+* Anomaly detection
+* Real-time ETL
 
 ---
 
@@ -106,10 +57,69 @@ client.put_record(
 
 ### Summary
 
-Kinesis Data Streams is essential for building scalable real-time data pipelines. It provides reliable ingestion of streaming data with high durability, fine-grained throughput control, and tight AWS integration.
+* A managed, real-time streaming service for ingesting large amounts of time-ordered data.
+* Ideal for logs, events, telemetry, and clickstreams.
 
 ---
 
-### Next Step
+## Amazon Kinesis Data Firehose
 
-Move to **Kinesis Firehose** after solid understanding and optional hands-on with Data Streams.
+### What It Is:
+
+* A fully managed service for **loading streaming data into destinations** like:
+
+  * Amazon S3
+  * Amazon Redshift
+  * Amazon OpenSearch
+  * Custom HTTP endpoints (via Lambda)
+
+---
+
+### Key Differences from Data Streams:
+
+| Feature           | Data Streams              | Firehose                             |
+| ----------------- | ------------------------- | ------------------------------------ |
+| Data Buffering    | Manual                    | Automatic                            |
+| Consumer Handling | You build                 | Managed                              |
+| Latency           | Low                       | Slightly higher (60s buffer default) |
+| Destinations      | Flexible (you write code) | Pre-built connectors                 |
+
+---
+
+### Buffering Options:
+
+* **Size-based**: E.g., 5 MB
+* **Time-based**: E.g., 60 seconds (default)
+
+---
+
+### Transformations:
+
+* Optional data transformation using **AWS Lambda**
+
+---
+
+### Compression and Encryption:
+
+* Supports GZIP, Snappy, ZIP
+* KMS-based encryption at rest
+
+---
+
+### Common Use Cases:
+
+* Real-time log delivery to S3
+* Loading transformed event data into Redshift
+* Near real-time analytics with minimal code
+
+---
+
+## Summary: When to Use What
+
+| Use Case                            | Use Service     |
+| ----------------------------------- | --------------- |
+| Real-time processing logic          | Kinesis Streams |
+| Auto-load into storage without code | Firehose        |
+| Flexible multiple consumers         | Streams         |
+| Simple ETL pipelines                | Firehose        |
+
