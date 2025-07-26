@@ -57,7 +57,7 @@ Kinesis Data Streams (KDS) is a real-time, highly scalable, and durable data str
 
 ### Summary
 
-* A managed, real-time streaming service for ingesting large amounts of time-ordered data.
+* A managed, real-time streaming service for ingesting large amounts of time -ordered data.
 * Ideal for logs, events, telemetry, and clickstreams.
 
 ---
