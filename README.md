@@ -1,4 +1,5 @@
-# aws-data-pipelines
+# aws-data-pipelines 
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/6703bd93-d0db-416a-a11c-d611099fd8e6" />
 
 This public repository documents a focused six-month learning journey to build production-grade, end-to-end data pipelines using AWS core services and modern engineering practices.
 
