@@ -1,4 +1,4 @@
-## AWS Services for Data Engineering – Category-wise Bucketing with Official Docs
+## AWS Services for Data Engineering – Category-wise Bucketing
 
 ---
 
