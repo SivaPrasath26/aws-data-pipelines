@@ -29,8 +29,6 @@ This phase lays the groundwork for building data engineering pipelines using AWS
 ## Structure
 
 - `notes/` – Deep conceptual explanations of IAM, S3, Console, CLI, Boto3.
-- `hands-on/` – Verified exercises and walkthroughs to practice each tool.
-- `assets/` – Screenshots or scripts related to Phase 1.
 
 ---
 
