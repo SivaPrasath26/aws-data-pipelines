@@ -83,3 +83,8 @@ Follow the below steps to resolve it
 ---
 
 Next: Upload a CSV file to the new bucket, then trigger a Glue crawler to crawl and catalog it.
+
+![alt text](image-10.png)
+
+Uploading will start once you click on upload
+![alt text](image-11.png)
