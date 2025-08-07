@@ -39,3 +39,13 @@ Name it something like AWSGlueServiceRole-MyProject
 <img width="1460" height="817" alt="image" src="https://github.com/user-attachments/assets/2ca184c4-2fd1-4e65-951e-8f74e3598965" />
 
 <img width="1074" height="723" alt="image" src="https://github.com/user-attachments/assets/c79a8f6a-3cf0-4597-b6fb-fed7826f8ed7" />
+
+## 7 Run the crawler
+
+<img width="1020" height="756" alt="image" src="https://github.com/user-attachments/assets/08f2a494-648c-4bb0-84c0-87f8855ffe16" />
+
+* Monitor the run
+<img width="1020" height="475" alt="image" src="https://github.com/user-attachments/assets/fdd15da1-aed8-46ba-9dd7-a28d7f1a151a" />
+
+## 8 Once done refresh db and check if the files got ingested
+<img width="1453" height="733" alt="image" src="https://github.com/user-attachments/assets/7f18cf87-b5d2-4d85-ba09-594ff57b9261" />
