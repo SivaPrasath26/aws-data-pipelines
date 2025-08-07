@@ -12,7 +12,7 @@ Steps:
 ## 3 Choose data store: S3, and select your bucket path.
 ![alt text](image-15.png)
 
-## 4 et IAM role: Use existing or create a new one with Glue access.
+## 4 Set IAM role: Use existing or create a new one with Glue access.
 
 * Choose:
 "Create new IAM role" → then select "Glue" as the service that can assume the role.
@@ -22,10 +22,20 @@ Steps:
 Name it something like AWSGlueServiceRole-MyProject
 
 ![alt text](image-16.png)
-Ensure it has permission to access your S3 bucket (you can manually add AmazonS3ReadOnlyAccess or custom S3 access later if needed)
+* Ensure it has permission to access your S3 bucket (you can manually add AmazonS3ReadOnlyAccess or custom S3 access later if needed)
 
-Let Glue use this role to read your uploaded CSV files and write metadata to the Glue Data Catalog.
+* If permission is denied to create iam role, go to your root account and select the iam user and add the below permission manually 
+<img width="1830" height="727" alt="image" src="https://github.com/user-attachments/assets/e41a4e85-63da-459d-bd0a-65f6efeea053" />
 
-Set output: Choose a database or create one.
+<img width="1497" height="767" alt="image" src="https://github.com/user-attachments/assets/2b311dc1-6ce7-4ff0-b784-57eb74bfe963" />
 
-Run the crawler.
+* Let Glue use this role to read your uploaded CSV files and write metadata to the Glue Data Catalog.
+
+## 5 Set output: Choose a database or create one.
+<img width="1440" height="732" alt="image" src="https://github.com/user-attachments/assets/472485d9-a1b2-4fc2-9b1c-69a41d47e4b4" />
+<img width="1068" height="730" alt="image" src="https://github.com/user-attachments/assets/3407bffe-d9fc-48ec-933c-51b0f89224e3" />
+
+## 6 Check all and create crawler
+<img width="1460" height="817" alt="image" src="https://github.com/user-attachments/assets/2ca184c4-2fd1-4e65-951e-8f74e3598965" />
+
+<img width="1074" height="723" alt="image" src="https://github.com/user-attachments/assets/c79a8f6a-3cf0-4597-b6fb-fed7826f8ed7" />
