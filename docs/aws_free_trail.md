@@ -1,6 +1,10 @@
-You can create a free AWS account and receive $100 credits upfront, with an additional $100 available via AWS Activate or educational programs. The Free Tier covers almost all services in this roadmap, including IAM, S3, Lambda, Glue, Athena, and more.
+You can create a free AWS account and receive $100 credits upfront, with an additional $100 available via activities shown in below image.
 
-> **Note**: All AWS services required for this entire roadmap are covered under the Free Tier and included in the $100 credits.
+<img width="642" height="460" alt="image" src="https://github.com/user-attachments/assets/f10a0601-1c7b-477f-839c-790f2090f008" />
+
+
+---
+> **Note**: Most of the AWS services(IAM,S3,Glue,Lambda,Quicksight,RDS,DynamoDB) required for this roadmap are covered under the Free Tier and included with total of $200 credits which is more than enough to gain hands-on experience.
 
 ---
 
