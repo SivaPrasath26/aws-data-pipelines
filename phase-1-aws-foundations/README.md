@@ -18,11 +18,11 @@ This phase lays the groundwork for building data engineering pipelines using AWS
 
 | Tool       | Description                                                                 |
 |------------|-----------------------------------------------------------------------------|
-| [IAM](phase-1-aws-foundations/notes/iam.md)        | Manage users, groups, roles, and permissions securely.                      |
-| [S3](phase-1-aws-foundations/notes/s3.md)         | Scalable object storage for raw, intermediate, and processed data.         |
-| [AWS Console](phase-1-aws-foundations/notes/aws_console.md) | Web-based UI for interacting with all AWS services.                        |
-| [AWS CLI](phase-1-aws-foundations/notes/aws_cli.md)    | Command-line interface for scripting and automation.                        |
-| [Boto3](phase-1-aws-foundations/notes/boto3.md)      | Python library to interact with AWS services programmatically.              |
+| [IAM](notes/iam.md)        | Manage users, groups, roles, and permissions securely.                      |
+| [S3](notes/s3.md)         | Scalable object storage for raw, intermediate, and processed data.         |
+| [AWS Console](notes/aws_console.md) | Web-based UI for interacting with all AWS services.                        |
+| [AWS CLI](notes/aws_cli.md)    | Command-line interface for scripting and automation.                        |
+| [Boto3](notes/boto3.md)      | Python library to interact with AWS services programmatically.              |
 
 ---
 
