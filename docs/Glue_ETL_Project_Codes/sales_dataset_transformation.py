@@ -1,10 +1,10 @@
 
 import sys
-from awsglue.transforms import *
-from awsglue.utils import getResolvedOptions
-from pyspark.context import SparkContext
-from awsglue.context import GlueContext
-from awsglue.job import Job
+from awsglue.transforms import * # type: ignore
+from awsglue.utils import getResolvedOptions # type: ignore
+from pyspark.context import SparkContext # type: ignore
+from awsglue.context import GlueContext # type: ignore
+from awsglue.job import Job # type: ignore
   
 sc = SparkContext.getOrCreate()
 glueContext = GlueContext(sc)
@@ -142,7 +142,7 @@ def union_all_tables(standardized_tables: dict) -> DataFrame:
 # Execute
 combined_df = union_all_tables(standardized_dfs)
 
-from awsglue.dynamicframe import DynamicFrame
+from awsglue.dynamicframe import DynamicFrame # type: ignore
 
 def write_to_s3_glue(combined_df, s3_path, database, table):
     """
