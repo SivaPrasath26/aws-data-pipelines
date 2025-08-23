@@ -27,8 +27,9 @@ This phase focuses on transforming, cleaning, and storing data in optimized form
 phase2_ingestion/
 ├── glue_jobs
 ├── s3_partitioning/
-├── delta_formats/
-├── schema_evolution
+├── cloudwatch/
+├── glue_catalog/
+├── delta_lake
 └── README.md
 ```
 
@@ -41,7 +42,7 @@ Each folder will contain:
 ## Prerequisites
 
 * IAM roles with Glue, S3, and Catalog permissions
-* Output buckets created (`output-de-data/processed/`)
+* Output buckets created (`output-de-data/`)
 * Basic Glue knowledge (from Phase 2)
 
 ## Output of Phase
