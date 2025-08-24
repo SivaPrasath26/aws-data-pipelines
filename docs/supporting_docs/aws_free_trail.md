@@ -1,6 +1,7 @@
 You can create a free AWS account and receive $100 credits upfront, with an additional $100 available via activities shown in below image.
 
-<img width="642" height="460" alt="image" src="https://github.com/user-attachments/assets/f10a0601-1c7b-477f-839c-790f2090f008" />
+<img width="1624" height="656" alt="image" src="https://github.com/user-attachments/assets/d6c9a979-8599-4b55-af34-d4cf9a0e425c" />
+
 
 
 ---
